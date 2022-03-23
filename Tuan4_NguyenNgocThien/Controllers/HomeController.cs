@@ -22,5 +22,20 @@ namespace Tuan4_NguyenNgocThien.Controllers
             return View(all_sach.ToPagedList(pageNum, pageSize));
         }
 
+        // paste xuong daypublic ActionResult About()
+        public ActionResult About()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
     }
   }

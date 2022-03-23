@@ -20,7 +20,7 @@ namespace Tuan4_NguyenNgocThien.Controllers
         }
         public ActionResult Detail(int id)
         {
-            var D_sach = data.Saches.Where(m => m.masach == id).First();
+            var D_sach = data.Saches.Where(m => m.masach == id).First();    
             return View(D_sach);
         }
 

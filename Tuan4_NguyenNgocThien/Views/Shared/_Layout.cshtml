@@ -20,9 +20,15 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Thể Loại", "Index", "Theloai")</li>
-                    <li>@Html.ActionLink("Sách", "ListSach", "Sach")</li>
-                    <li>@Html.Partial("/Views/GioHang/GioHangPartial.cshmtl")</li>
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+                    <li>@Html.Partial("~/Views/GioHang/GioHangPartial.cshtml")</li>
+                    <li>@Html.ActionLink("Đăng Ký", "DangKy", "NguoiDung")</li>
+                    <li>@Html.ActionLink("Đăng Nhập", "DangNhap", "NguoiDung")</li>
+
+
                 </ul>
             </div>
         </div>
@@ -38,6 +44,7 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
     @RenderSection("upload", required: false)
 </body>
 </html>
